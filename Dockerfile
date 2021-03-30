@@ -14,5 +14,3 @@ RUN poetry install
 EXPOSE 8000
 
 CMD ["uvicorn", "beeline:application"]
-#CMD ["uvicorn", "beeline:application", "--host", "0.0.0.0", "--port", "8000"]
-
