@@ -10,7 +10,7 @@ COPY resources/ resources/
 COPY beeline/ beeline/
 COPY poetry.lock .
 
-RUN poetry install
+RUN poetry install --no-dev
 EXPOSE 8000
 
 CMD ["uvicorn", "beeline:application"]
